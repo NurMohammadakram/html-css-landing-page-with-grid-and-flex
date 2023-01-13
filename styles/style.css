@@ -71,6 +71,7 @@ hr {
 .blog {
     display: flex;
     gap: 1em;
+    justify-content: space-between;
 }
 .blog img {
     width: 11.0625em;
@@ -91,10 +92,40 @@ hr {
     media query for all devices
 ########################################################################## */
 @media only screen and (max-width: 576px) {
+    .container {
+        padding: 20px 15px;
+        margin: 0;
+    }
     .players {
         grid-template-columns: 1fr;
     }
+    .player {
+        flex-direction: column;
+    }
+    .player h5 {
+        font-size: 1em;
+    }
     .blogs {
         grid-template-columns: 1fr;
+    }
+    .blog {
+        flex-direction: row-reverse;
+    }
+    /* .blog img {
+        width: 9.0625em;
+        height: 5.3125em;
+    } */
+    /* .blog-4 img {
+        width: 8.0625em;
+        height: 5.3125em;
+    } */
+    .blog-info .title {
+        font-weight: 500;
+        font-size: 1.125em;
+    }
+    .blog-info .subtitle {
+        margin-top: 6px;
+        font-size: 0.875em;
+        font-weight: 400;
     }
 }
