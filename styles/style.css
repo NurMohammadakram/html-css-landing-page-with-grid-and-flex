@@ -1,0 +1,100 @@
+/* importing google fronts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+
+* {
+    margin: 0;
+}
+main {
+    background: #E5E5E5;
+    display: flex;
+    justify-content: center;
+}
+.container {
+    width: 870px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 30px;
+    margin:2.25em 0;
+}
+a {
+    text-decoration: none;
+}
+
+/* -------------------------------------------
+            blog and player section
+--------------------------------------------- */
+
+.blog-and-player-section {
+    font-family: poppins;
+}
+.players {
+    margin-top: 2.5em;
+    margin-bottom: 1.875em;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 5em;
+    row-gap: 1.8125em
+    /* grid-template-rows: repeat(2, 1fr); */
+}
+.player {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+}
+.player h5 {
+    font-size: 1.125em;
+}
+.player img {
+    width: 3.5em;
+}
+
+hr {
+    width: 100%;
+    border: 1px solid #D1D1D1;
+}
+
+/* ---------------------------------------------
+    Top blogs styles start here
+------------------------------------------------ */
+
+.top-blogs h2 {
+    margin: 1.875em 0;
+}
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.625em;
+    column-gap: 2.8125em;
+}
+
+.blog {
+    display: flex;
+    gap: 1em;
+}
+.blog img {
+    width: 11.0625em;
+    height: 7.3125em;
+}
+.blog-info .title {
+    font-weight: 500;
+    font-size: 1.25em;
+}
+.blog-info .subtitle {
+    margin-top: 6px;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+
+/* ########################################################################
+    media query for all devices
+########################################################################## */
+@media only screen and (max-width: 576px) {
+    .players {
+        grid-template-columns: 1fr;
+    }
+    .blogs {
+        grid-template-columns: 1fr;
+    }
+}
